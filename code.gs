@@ -20,7 +20,7 @@ function ConvertToMarkdown() {
   // Email Configuration
   var message = "Se ha creado un nuevo post para que lo publiques";
   var recipientsTO = getEmails();
-  var subject = "New 📝 Catlog.co";
+  var subject = "New 📝 ";
 
   var numChildren = DocumentApp.getActiveDocument().getActiveSection().getNumChildren();
   var text = "";
