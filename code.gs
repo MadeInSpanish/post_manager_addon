@@ -10,11 +10,16 @@ function onInstall(e) {
   onOpen(e);
 }
 
+function getEmails() {
+  var colaborators = DocumentApp.getActiveDocument().getViewers();
+
+  return colaborators.join(', ');
+}
+
 function ConvertToMarkdown() {
   // Email Configuration
-  var emailQuotaRemaining = MailApp.getRemainingDailyQuota();
   var message = "Se ha creado un nuevo post para que lo publiques";
-  var recipientsTO = "anamaria@catlog.co" + "," + Session.getActiveUser().getEmail();;
+  var recipientsTO = getEmails();
   var subject = "New 📝 Catlog.co";
 
   var numChildren = DocumentApp.getActiveDocument().getActiveSection().getNumChildren();
@@ -78,6 +83,9 @@ function ConvertToMarkdown() {
       "mimeType": "text/plain",
       "content": text
     });
+
+    DocumentApp
+      .findText(/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
 
   MailApp.sendEmail({
     to: recipientsTO,
