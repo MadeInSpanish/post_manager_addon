@@ -1,17 +1,12 @@
 # Send Email With Markdown File
 
-> This google add-on exports a google document as Markdown and send it to the catlog.co CEO
-
-
-## Installation
-
-Install this Google Docs add-on from the
+> This google add-on exports a google document as Markdown and send it to the users of the document
 
 ## Usage
 
 1. Open Google Docs and the add-on should be available from the `Add-ons` menu.
 2. You will need to accept the authorization request.
-3. After a moment the CEO should receive an email with the Markdown file.
+3. After a moment the users of the document should receive an email with the Markdown file.
 
 ## Credits
 
@@ -19,6 +14,7 @@ Install this Google Docs add-on from the
 
 ## Info
 If you prefer to save the file in your google drive you only have to copy this code
+
 
 ```
 var resname = DocumentApp.getActiveDocument().getName();
