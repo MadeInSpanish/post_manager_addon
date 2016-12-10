@@ -1,4 +1,4 @@
-#  <img src="chrome web logo.png" width="45" align="left">Send Email With Markdown File
+# Send Email With Markdown File
 
 > This google add-on exports a google document as Markdown and send it to the catlog.co CEO
 
