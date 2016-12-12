@@ -2,6 +2,8 @@
 
 > This google add on sends a markdown file to people who are on the collaborators list
 
+[![Post Manager Add-on](http://i.imgur.com/7YTMFQp.png)](https://www.youtube.com/watch?v=koz8c1ZW_o4 "Click to Watch!")
+
 ## Usage
 
 1. Open Google Docs and the add-on should be available from the `Add-ons` menu.
