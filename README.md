@@ -1,6 +1,6 @@
 # Send Email With Markdown File
 
-> This google add-on exports a google document as Markdown and send it to the users of the document
+> This google add on sends a markdown file to people who are on the collaborators list
 
 ## Usage
 
